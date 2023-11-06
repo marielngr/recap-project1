@@ -6,7 +6,11 @@
 }
 
 header {
-  border: 3px solid green;
+  /* border: 3px solid green; */
   font-family: "Lobster", sans-serif;
+  font-size: 25px;
+  color: orangered;
+  background-color: cornflowerblue;
   padding: 10px;
+  text-align: center;
 }
