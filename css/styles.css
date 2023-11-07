@@ -71,3 +71,24 @@ header {
   padding: 5px;
   background-color: rgb(170, 196, 243);
 }
+footer {
+  /* border: 3px solid green; */
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  background-color: cornflowerblue;
+  padding: 1rem;
+}
+
+footer img {
+  max-width: 60px;
+}
+
+.bookmark {
+  max-width: 40px;
+}
+
+.user {
+  max-width: 54px;
+}
