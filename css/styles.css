@@ -9,6 +9,7 @@ body {
   background-color: rgb(170, 196, 243);
   max-width: 600px;
   margin: auto;
+  padding-bottom: 100px;
 }
 
 header {
@@ -86,7 +87,6 @@ footer {
   width: 600px;
   justify-content: space-between;
   background-color: cornflowerblue;
-  padding: 1rem;
 }
 
 .menu {
@@ -110,6 +110,12 @@ footer {
   /* border: 2px solid red; */
   text-align: center;
   min-width: 5rem;
+  padding: 1rem;
+  flex-basis: 33%;
+}
+
+.menulist li.active {
+  background-color: rgb(40, 75, 140);
 }
 
 .menulist li img {

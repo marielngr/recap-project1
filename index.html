@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
@@ -42,6 +46,7 @@
           />
         </div>
         <p class="question">Lorem Impsum dolor sit?</p>
+        <!-- <i class="bx bx-user"></i><i class="bx bxs-user"></i> -->
         <button class="show-answer">Show Answer</button>
         <p class="answer"></p>
         <ul class="categories">
@@ -54,16 +59,25 @@
     <footer>
       <nav class="menu">
         <ul class="menulist">
-          <li><img class="home" src="assets/house-solid.svg" alt="Home" /></li>
+          <li class="active">
+            <a href="index.html">
+            <img class="home" src="assets/house-solid.svg" alt="Home" />
+          </a>  
+          </li>
+          </li>
           <li>
+            <a href="bookmark.html">
             <img
               class="bookmark"
               src="assets/bookmark-solid.svg"
               alt="Bookmark"
             />
+            </a>
           </li>
           <li>
+            <a href="profile.html">
             <img class="user" src="assets/circle-user-solid.svg" alt="User" />
+          </a>
           </li>
         </ul>
       </nav>
