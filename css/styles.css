@@ -48,7 +48,7 @@ header {
   padding-top: 5px;
   padding-bottom: 5px;
   font-family: "Lobster", sans-serif;
-  font-size: 20px;
+  font-size: 1, 25rem;
 }
 
 .show-answer {
@@ -57,7 +57,7 @@ header {
   border-radius: 10px;
   border-color: orangered;
   margin-top: 2rem;
-  padding: 5px;
+  padding: 6px;
   padding-left: 15px;
   padding-right: 15px;
   text-align: center;
