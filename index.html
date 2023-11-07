@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Document</title>
+    <title>Quiz App</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,7 +27,7 @@
         <p class="question">What properties flips the axes in flexbox?</p>
         <button class="show-answer">Show Answer</button>
         <p class="answer"></p>
-        <ul class="categories">
+        <ul class="categories" aria-label="categories">
           <li>#html</li>
           <li>#flexbox</li>
           <li>#css</li>
@@ -52,9 +52,21 @@
       </section>
     </main>
     <footer>
-      <img class="home" src="assets/house-solid.svg" alt="Home" />
-      <img class="bookmark" src="assets/bookmark-solid.svg" alt="Bookmark" />
-      <img class="user" src="assets/circle-user-solid.svg" alt="User" />
+      <nav class="menu">
+        <ul class="menulist">
+          <li><img class="home" src="assets/house-solid.svg" alt="Home" /></li>
+          <li>
+            <img
+              class="bookmark"
+              src="assets/bookmark-solid.svg"
+              alt="Bookmark"
+            />
+          </li>
+          <li>
+            <img class="user" src="assets/circle-user-solid.svg" alt="User" />
+          </li>
+        </ul>
+      </nav>
     </footer>
   </body>
 </html>

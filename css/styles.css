@@ -79,23 +79,48 @@ header {
   background-color: rgb(170, 196, 243);
 }
 footer {
-  /* border: 3px solid green; */
-  position: sticky;
+  border: 3px solid green;
+  position: fixed;
   bottom: 0;
   display: flex;
-  justify-content: space-around;
+  width: 600px;
+  justify-content: space-between;
   background-color: cornflowerblue;
   padding: 1rem;
 }
 
-footer img {
+.menu {
+  /* nav */
+  /* border: 5px solid pink; */
+  width: 100%;
+}
+
+.menulist {
+  width: 100%;
+  /* border: 2px solid yellow; */
+  max-width: 600px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menulist li {
+  /* border: 2px solid red; */
+  text-align: center;
+  min-width: 5rem;
+}
+
+.menulist li img {
   max-width: 60px;
+  display: inline-block;
 }
 
 .bookmark {
-  max-width: 40px;
+  width: 40px;
 }
 
 .user {
-  max-width: 54px;
+  width: 54px;
 }
