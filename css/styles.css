@@ -9,6 +9,7 @@ body {
   background-color: rgb(170, 196, 243);
   max-width: 600px;
   margin: auto;
+  padding-bottom: 100px;
 }
 
 header {
@@ -48,7 +49,7 @@ header {
   padding-top: 5px;
   padding-bottom: 5px;
   font-family: "Lobster", sans-serif;
-  font-size: 20px;
+  font-size: 1, 25rem;
 }
 
 .show-answer {
@@ -57,7 +58,7 @@ header {
   border-radius: 10px;
   border-color: orangered;
   margin-top: 2rem;
-  padding: 5px;
+  padding: 6px;
   padding-left: 15px;
   padding-right: 15px;
   text-align: center;
@@ -80,22 +81,65 @@ header {
 }
 footer {
   /* border: 3px solid green; */
-  position: sticky;
+  position: fixed;
   bottom: 0;
   display: flex;
-  justify-content: space-around;
+  width: 600px;
+  justify-content: space-between;
   background-color: cornflowerblue;
-  padding: 1rem;
 }
 
-footer img {
+.menu {
+  /* nav */
+  /* border: 5px solid pink; */
+  width: 100%;
+}
+
+.menulist {
+  width: 100%;
+  /* border: 2px solid yellow; */
+  max-width: 600px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menulist li {
+  /* border: 2px solid red; */
+  text-align: center;
+  min-width: 5rem;
+  padding: 1rem;
+  flex-basis: 33%;
+  position: relative;
+  height: 80px;
+}
+
+.menulist li a {
+  /* border: 1px solid yellow; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menulist li.active {
+  background-color: rgb(40, 75, 140);
+}
+
+.menulist li img {
   max-width: 60px;
+  display: inline-block;
 }
 
 .bookmark {
-  max-width: 40px;
+  width: 40px;
 }
 
 .user {
-  max-width: 54px;
+  width: 54px;
 }
