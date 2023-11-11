@@ -3,13 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    /> 
     <title>Profile</title>
   </head>
-  <body></body>
+  <body>
+    <body>
+      <header><h1>Quiz App</h1></header>
+      <main>
+       <div>
+        <img src="assets/circle-user-solid.svg" alt="Benutzerbild">
+        <h2>Max Doe</h2>
+       </div>
+       <article>
+        <h2>About me</h2>
+        <p>Hallo. Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man ergibt keinen Sinn.</p> 
+        <section>
+          <div>
+            <i class='bx bxs-check-circle'></i>
+            <span>12</span>
+          </div>
+          <div>
+            <img src="assets/bookmark-solid.svg" alt="Bookmarkicon">
+            <span>4</span>
+          </div>
+        </section>
+        <section>
+          <h2>Settings</h2>
+          <div>
+            <h3>Dark Mode</h3>
+            <button>Switch</button>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <nav class="menu">
+          <ul class="menulist">
+            <li>
+              <a href="index.html">
+              <img class="home" src="assets/house-solid.svg" alt="Home" />
+            </a>  
+            </li>
+            <li>
+              <a href="bookmarks.html">
+              <img
+                class="bookmark"
+                src="assets/bookmark-solid.svg"
+                alt="Bookmark"
+              />
+              </a>
+            </li>
+            <li class="active">
+              <a href="profile.html">
+              <img class="user" src="assets/circle-user-solid.svg" alt="User" />
+            </a>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+  </body>
 </html>
