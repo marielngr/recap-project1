@@ -23,7 +23,7 @@
   margin-right: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
-  font-family: "Lobster", sans-serif;
+  font-family: var(--cool-font-family);
   font-size: 1, 25rem;
 }
 
@@ -35,7 +35,7 @@
   margin-right: 10px;
   padding-top: 30px;
   padding-bottom: 30px;
-  font-family: "Lobster", sans-serif;
+  font-family: var(--cool-font-family);
   font-size: 1, 25rem;
 }
 

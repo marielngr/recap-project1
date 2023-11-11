@@ -1,6 +1,6 @@
 header {
   border: 5px solid var(--secondary-color);
-  font-family: "Lobster", sans-serif;
+  font-family: var(--cool-font-family);
   font-size: 25px;
   color: var(--primary-color);
   background-color: var(--secondary-color);
