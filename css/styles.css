@@ -1,31 +1,19 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-body {
-  background-color: rgb(170, 196, 243);
-  max-width: 600px;
-  margin: auto;
-  padding-bottom: 100px;
-}
+@import "global.css";
 
 header {
-  border: 5px solid cornflowerblue;
+  border: 5px solid var(--secondary-color);
   font-family: "Lobster", sans-serif;
   font-size: 25px;
-  color: orangered;
-  background-color: cornflowerblue;
+  color: var(--primary-color);
+  background-color: #6495ed;
   padding: 20px;
   text-align: center;
-  border-bottom-color: orangered;
+  border-bottom-color: var(--primary-color);
 }
 
 .qabox {
-  border: 3px solid orangered;
-  background-color: rgb(134, 172, 242);
+  border: 3px solid var(--primary-color);
+  background-color: var(--background-cards);
   margin-top: 2rem;
   margin-bottom: 2rem;
   /* text-align: center; */
@@ -56,14 +44,14 @@ header {
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
-  border-color: orangered;
+  border-color: var(--primary-color);
   margin-top: 2rem;
   padding: 6px;
   padding-left: 15px;
   padding-right: 15px;
   text-align: center;
   border-style: outset;
-  background-color: cornflowerblue;
+  background-color: var(--secondary-color);
   color: white;
 }
 
@@ -93,7 +81,7 @@ header {
   display: inline;
   margin-right: 5px;
   padding: 5px;
-  background-color: rgb(170, 196, 243);
+  background-color: var(--tertiary-color);
 }
 footer {
   /* border: 3px solid green; */
@@ -102,7 +90,7 @@ footer {
   display: flex;
   width: 600px;
   justify-content: space-between;
-  background-color: cornflowerblue;
+  background-color: var(--secondary-color);
 }
 
 .menu {
@@ -144,7 +132,7 @@ footer {
 }
 
 .menulist li.active {
-  background-color: rgb(40, 75, 140);
+  background-color: var(--quaternary-color);
 }
 
 .menulist li img {

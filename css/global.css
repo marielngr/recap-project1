@@ -1,0 +1,25 @@
+:root {
+  --primary-color: #ff4500;
+  --secondary-color: #6394ed;
+  --background-cards: #86acf2;
+  --tertiary-color: #aac4f3;
+  --quaternary-color: #284b8c;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: var(--tertiary-color);
+  max-width: 600px;
+  margin: auto;
+  padding-bottom: 100px;
+}
+
+/* .flex (
+
+) */
