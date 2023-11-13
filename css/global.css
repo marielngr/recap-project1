@@ -5,6 +5,8 @@
   --tertiary-color: #aac4f3;
   --quaternary-color: #284b8c;
   --cool-font-family: "Lobster", sans-serif;
+  --footer-height: 100px;
+  --app-width: 600px;
 }
 
 *,
@@ -16,9 +18,9 @@
 
 body {
   background-color: var(--tertiary-color);
-  max-width: 600px;
+  max-width: var(--app-width);
   margin: auto;
-  padding-bottom: 100px;
+  padding-bottom: var(--footer-height);
 }
 
 /* .flex (

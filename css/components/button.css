@@ -11,4 +11,17 @@
   border-style: outset;
   background-color: var(--secondary-color);
   color: white;
+  cursor: pointer;
 }
+
+/* .button-show-answer:focus {
+  outline: 5px dashed green;
+}
+
+.button-show-answer:active {
+  border-style: inset;
+}
+
+.button-show-answer:hover {
+  background-color: black;
+} */
