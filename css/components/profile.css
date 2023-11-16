@@ -55,7 +55,6 @@
 }
 
 .settings {
-  border: 2px solid violet;
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -67,5 +66,31 @@
   justify-content: space-between;
 }
 
-.dark-mode-button {
+.hidden-switch {
+  display: none;
+}
+
+.switch {
+  cursor: pointer;
+  width: 3rem;
+  height: 1.35rem;
+  background-color: var(--quaternary-color);
+  border-radius: 15px;
+  position: relative;
+}
+
+.switch .toggle {
+  background: white;
+  width: 12px;
+  height: 12px;
+  display: block;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  border-radius: 50%;
+}
+
+.hidden-switch:checked + .toggle {
+  right: 5px;
+  left: auto;
 }
