@@ -11,10 +11,7 @@
   display: flex;
   flex: 1;
   gap: 5rem;
-
-  /* justify-content: space-evenly; */
-  /* overflow-x: auto; */
-  /* width: 100%; */
+  align-items: center;
 }
 
 .profile-user_image {
@@ -23,4 +20,6 @@
 
 .profile-username {
   flex: 50%;
+  font-family: var(--cool-font-family);
+  font-size: 3rem;
 }
