@@ -1,0 +1,27 @@
+.button-show-answer {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  border-color: var(--primary-color);
+  margin-top: 2rem;
+  padding: 6px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  border-style: outset;
+  background-color: var(--secondary-color);
+  color: white;
+  cursor: pointer;
+}
+
+/* .button-show-answer:focus {
+  outline: 5px dashed green;
+}
+
+.button-show-answer:active {
+  border-style: inset;
+}
+
+.button-show-answer:hover {
+  background-color: black;
+} */

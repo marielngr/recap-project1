@@ -1,0 +1,28 @@
+:root {
+  --primary-color: #ff4500;
+  --secondary-color: #6394ed;
+  --background-cards: #86acf2;
+  --tertiary-color: #aac4f3;
+  --quaternary-color: #284b8c;
+  --cool-font-family: "Lobster", sans-serif;
+  --footer-height: 100px;
+  --app-width: 600px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: var(--tertiary-color);
+  max-width: var(--app-width);
+  margin: auto;
+  padding-bottom: var(--footer-height);
+}
+
+/* .flex (
+
+) */
