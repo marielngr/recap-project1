@@ -7,6 +7,7 @@
   --cool-font-family: "Lobster", sans-serif;
   --footer-height: 100px;
   --app-width: 600px;
+  --main-padding: 2rem;
 }
 
 *,
@@ -23,6 +24,6 @@ body {
   padding-bottom: var(--footer-height);
 }
 
-/* .flex (
-
-) */
+main {
+  padding: var(--main-padding);
+}

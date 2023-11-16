@@ -16,12 +16,15 @@
     />
     <title>Profile</title>
   </head>
-  <body>
+  <body class="profile">
     <header><h1>Quiz App</h1></header>
+
     <main>
-      <div class="">
-        <img src="assets/circle-user-solid.svg" alt="Benutzerbild" />
-        <h2>Max Doe</h2>
+      <div class="profile-user">
+        <figure class="profile-user_image">
+          <img src="assets/circle-user-solid.svg" alt="Benutzerbild" />
+        </figure>
+        <h2 class="profile-username">Max Doe</h2>
       </div>
       <article>
         <h2>About me</h2>
@@ -31,17 +34,17 @@
           blinder Text zu sein: Man ergibt keinen Sinn.
         </p>
       </article>
-      <section>
-        <div>
+      <section class="counter">
+        <div class="questioncounter">
           <i class="bx bxs-check-circle"></i>
           <span>12</span>
         </div>
-        <div>
+        <div class="bookmarkcounter">
           <img src="assets/bookmark-solid.svg" alt="Bookmarkicon" />
           <span>4</span>
         </div>
       </section>
-      <section>
+      <section class="settings">
         <h2>Settings</h2>
         <div>
           <h3>Dark Mode</h3>
