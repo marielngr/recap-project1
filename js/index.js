@@ -9,7 +9,7 @@ const buttonShowAnswer1 = document.querySelector(
 const Box1 = document.querySelector('[data-js="qabox_1"]');
 
 buttonShowAnswer1.addEventListener("click", () => {
-  Box1.classList.toggle("answer--visible");
+  Box1.classList.toggle("qabox--answer-visible");
 
   //   if (!Box1.classList.contains("answer--visible")) {
   //     Box1.innerHTML = "Hide Answer";

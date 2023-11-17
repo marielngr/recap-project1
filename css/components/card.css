@@ -36,9 +36,24 @@
   font-family: var(--cool-font-family);
   font-size: 1, 25rem;
 }
+.button-show-answer_hide {
+  display: none;
+}
 
-.answer--visible {
+.qabox--answer-visible {
   border: 10px solid green;
+}
+
+.qabox--answer-visible .answer {
+  display: block;
+}
+
+.qabox--answer-visible .button-show-answer_hide {
+  display: inline;
+}
+
+.qabox--answer-visible .button-show-answer_show {
+  display: none;
 }
 
 .categories {

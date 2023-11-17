@@ -22,7 +22,7 @@
   <body>
     <header><h1>Quiz App</h1></header>
     <main>
-      <section class="qabox answer--visible" data-js="qabox_1">
+      <section class="qabox qabox--answer-visible" data-js="qabox_1">
         <div class="bookmark">
           <img
             class="bookmark markpos"
@@ -31,7 +31,9 @@
           />
         </div>
         <p class="question">What properties flips the axes in flexbox?</p>
-        <button class="button-show-answer" data-js="button-show-answer_1">Show Answer</button>
+        <button class="button-show-answer" data-js="button-show-answer_1">
+          <span class="button-show-answer_show">Show</span>
+          <span class="button-show-answer_hide">Hide</span> Answer</button>
         <p class="answer">flex-direction</p>
         <ul class="categories" aria-label="categories">
           <li>#html</li>
