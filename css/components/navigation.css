@@ -1,8 +1,5 @@
 footer {
-  position: fixed;
-  bottom: 0;
   display: flex;
-  width: var(--app-width);
   justify-content: space-between;
   background-color: var(--secondary-color);
 }

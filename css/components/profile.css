@@ -1,13 +1,10 @@
 .profile main {
-  /* border: 2px solid green; */
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  width: var(--app-width);
 }
 
 .profile-user {
-  /* border: 2px dotted red; */
   display: flex;
   flex: 1;
   gap: 5rem;

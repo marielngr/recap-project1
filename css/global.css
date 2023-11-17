@@ -5,7 +5,6 @@
   --tertiary-color: #aac4f3;
   --quaternary-color: #284b8c;
   --cool-font-family: "Lobster", sans-serif;
-  --footer-height: 100px;
   --app-width: 600px;
   --main-padding: 2rem;
 }
@@ -17,13 +16,22 @@
   margin: 0;
 }
 
+html {
+  height: 100vh;
+}
+
 body {
   background-color: var(--tertiary-color);
   max-width: var(--app-width);
   margin: auto;
-  padding-bottom: var(--footer-height);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-height: 100vh;
 }
 
 main {
   padding: var(--main-padding);
+  flex: 1;
+  overflow-y: scroll;
 }
