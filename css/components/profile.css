@@ -1,0 +1,93 @@
+.profile main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.profile-user {
+  display: flex;
+  flex: 1;
+  gap: 5rem;
+  align-items: center;
+}
+
+.profile-user_image {
+  flex: 50%;
+}
+
+.profile-username {
+  flex: 50%;
+  font-family: var(--cool-font-family);
+  font-size: 3rem;
+}
+
+.profile-article {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.counter {
+  display: flex;
+  flex: 1;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.counter > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  width: 5rem;
+  height: 1.5rem;
+  background-color: var(--background-cards);
+}
+
+.counter-bookmark_image {
+  flex-basis: 1em;
+  padding: 4px 2px 0 2px;
+}
+
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.dark-mode-menu {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.hidden-switch {
+  display: none;
+}
+
+.switch {
+  cursor: pointer;
+  width: 3rem;
+  height: 1.35rem;
+  background-color: var(--quaternary-color);
+  border-radius: 15px;
+  position: relative;
+}
+
+.switch .toggle {
+  background: white;
+  width: 12px;
+  height: 12px;
+  display: block;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  border-radius: 50%;
+}
+
+.hidden-switch:checked + .toggle {
+  right: 5px;
+  left: auto;
+}

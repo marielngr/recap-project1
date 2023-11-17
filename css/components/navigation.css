@@ -1,22 +1,15 @@
 footer {
-  /* border: 3px solid green; */
-  position: fixed;
-  bottom: 0;
   display: flex;
-  width: var(--app-width);
   justify-content: space-between;
   background-color: var(--secondary-color);
 }
 
 .menu {
-  /* nav */
-  /* border: 5px solid pink; */
   width: 100%;
 }
 
 .menulist {
   width: 100%;
-  /* border: 2px solid yellow; */
   max-width: var(--app-width);
   list-style: none;
   margin: 0;
@@ -26,17 +19,17 @@ footer {
 }
 
 .menulist li {
-  /* border: 2px solid red; */
   text-align: center;
   min-width: 5rem;
   padding: 1rem;
   flex-basis: 33%;
   position: relative;
   height: 80px;
+  /* display: flex;
+  flex: 1; */
 }
 
 .menulist li a {
-  /* border: 1px solid yellow; */
   position: absolute;
   top: 0;
   left: 0;
