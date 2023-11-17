@@ -15,12 +15,14 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     /> -->
+    <script src="js/index.js" defer></script>
+    <title>Quiz-App</title>
   </head>
 
   <body>
     <header><h1>Quiz App</h1></header>
     <main>
-      <section class="qabox">
+      <section class="qabox answer--visible" data-js="qabox_1">
         <div class="bookmark">
           <img
             class="bookmark markpos"
@@ -29,7 +31,7 @@
           />
         </div>
         <p class="question">What properties flips the axes in flexbox?</p>
-        <button class="button-show-answer">Show Answer</button>
+        <button class="button-show-answer" data-js="button-show-answer_1">Show Answer</button>
         <p class="answer">flex-direction</p>
         <ul class="categories" aria-label="categories">
           <li>#html</li>
@@ -37,6 +39,8 @@
           <li>#css</li>
         </ul>
       </section>
+
+
       <section class="qabox">
         <div class="bookmark">
           <img

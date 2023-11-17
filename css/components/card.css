@@ -17,7 +17,6 @@
 }
 
 .question {
-  /* border: 1px solid yellow; */
   text-align: center;
   margin-left: 10px;
   margin-right: 10px;
@@ -28,7 +27,6 @@
 }
 
 .answer {
-  /* border: 2px solid red; */
   display: none;
   text-align: center;
   margin-left: 10px;
@@ -40,7 +38,7 @@
 }
 
 .answer--visible {
-  display: block;
+  border: 10px solid green;
 }
 
 .categories {
