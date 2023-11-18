@@ -20,7 +20,7 @@
   background-size: stretch;
   background-repeat: no-repeat;
   background-color: transparent;
-
+  cursor: pointer;
   position: absolute;
   top: -10px;
   left: 85%;
@@ -61,6 +61,10 @@
 .qabox--answer-visible .button-show-answer_show {
   display: none;
 }
+
+/* .qabox--answer-visible .button-bookmark {
+  background-image: url("../../assets/bookmark-solid.svg");
+} */
 
 .categories {
   list-style: none;

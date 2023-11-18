@@ -8,7 +8,7 @@ const buttonShowAnswer1 = document.querySelector(
 
 const Box1 = document.querySelector('[data-js="qabox_1"]');
 
-if (buttonShowAnswer1) {
+if (buttonShowAnswer1 !== null) {
   buttonShowAnswer1.addEventListener("click", () => {
     Box1.classList.toggle("qabox--answer-visible");
   });
@@ -37,6 +37,25 @@ if (checkboxDarkMode) {
 }
 
 //Switch bookmarkicon on buttonclick + Anzeige auf Bookmarked-Page
+
+const bookmarkButton = document.querySelector('[data-js="bookmark-button"]');
+console.log(bookmarkButton);
+
+let isDefaultBookmark = true;
+
+if (bookmarkButton) {
+  bookmarkButton.addEventListener("click", () => {
+    if (isDefaultBookmark) {
+      bookmarkButton.style.backgroundImage =
+        "url('../../assets/bookmark-regular.svg')";
+    } else {
+      bookmarkButton.style.backgroundImage =
+        "url('../../assets/bookmark-solid.svg')";
+    }
+
+    isDefaultBookmark = !isDefaultBookmark;
+  });
+}
 
 //Counter
 
