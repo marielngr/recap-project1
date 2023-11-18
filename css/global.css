@@ -9,6 +9,14 @@
   --main-padding: 2rem;
 }
 
+.dark-mode {
+  --primary-color: rgb(247, 241, 241);
+  --secondary-color: #4d5054;
+  --background-cards: #8d9095;
+  --tertiary-color: #9198a0;
+  --quaternary-color: #1f2023;
+}
+
 *,
 *::before,
 *::after {
