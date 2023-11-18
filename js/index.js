@@ -10,10 +10,16 @@ const Box1 = document.querySelector('[data-js="qabox_1"]');
 
 buttonShowAnswer1.addEventListener("click", () => {
   Box1.classList.toggle("qabox--answer-visible");
+});
 
-  //   if (!Box1.classList.contains("answer--visible")) {
-  //     Box1.innerHTML = "Hide Answer";
-  //   }
+const buttonShowAnswer2 = document.querySelector(
+  '[data-js="button-show-answer_2"]'
+);
+
+const Box2 = document.querySelector('[data-js="qabox_2"]');
+
+buttonShowAnswer2.addEventListener("click", () => {
+  Box2.classList.toggle("qabox--answer-visible");
 });
 
 //Switch bookmarkicon on buttonclick + Anzeige auf Bookmarked-Page
@@ -24,4 +30,3 @@ buttonShowAnswer1.addEventListener("click", () => {
 
 //Categorien-Keywords?
 //Change Userpic/-name?
-//

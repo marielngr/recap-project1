@@ -40,10 +40,6 @@
   display: none;
 }
 
-.qabox--answer-visible {
-  border: 10px solid green;
-}
-
 .qabox--answer-visible .answer {
   display: block;
 }
