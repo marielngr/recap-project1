@@ -26,6 +26,10 @@
   left: 85%;
 }
 
+.bookmarked .button-bookmark {
+  background-image: url("../../assets/bookmark-solid.svg");
+}
+
 .question {
   text-align: center;
   margin-left: 10px;

@@ -38,24 +38,40 @@ if (checkboxDarkMode) {
 
 //Switch bookmarkicon on buttonclick + Anzeige auf Bookmarked-Page
 
-const bookmarkButton = document.querySelector('[data-js="bookmark-button"]');
-console.log(bookmarkButton);
+const bookmarkButton1 = document.querySelector('[data-js="bookmark-button1"]');
 
-let isDefaultBookmark = true;
-
-if (bookmarkButton) {
-  bookmarkButton.addEventListener("click", () => {
-    if (isDefaultBookmark) {
-      bookmarkButton.style.backgroundImage =
-        "url('../../assets/bookmark-regular.svg')";
-    } else {
-      bookmarkButton.style.backgroundImage =
-        "url('../../assets/bookmark-solid.svg')";
-    }
-
-    isDefaultBookmark = !isDefaultBookmark;
+if (bookmarkButton1) {
+  bookmarkButton1.addEventListener("click", () => {
+    Box1.classList.toggle("bookmarked");
   });
 }
+
+const bookmarkButton2 = document.querySelector('[data-js="bookmark-button2"]');
+
+if (bookmarkButton2) {
+  bookmarkButton2.addEventListener("click", () => {
+    Box2.classList.toggle("bookmarked");
+  });
+}
+
+// const bookmarkButton = document.querySelector('[data-js="bookmark-button"]');
+// console.log(bookmarkButton);
+
+// let isDefaultBookmark = true;
+
+// if (bookmarkButton) {
+//   bookmarkButton.addEventListener("click", () => {
+//     if (isDefaultBookmark) {
+//       bookmarkButton.style.backgroundImage =
+//         "url('../../assets/bookmark-regular.svg')";
+//     } else {
+//       bookmarkButton.style.backgroundImage =
+//         "url('../../assets/bookmark-solid.svg')";
+//     }
+
+//     isDefaultBookmark = !isDefaultBookmark;
+//   });
+// }
 
 //Counter
 
