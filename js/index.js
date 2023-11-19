@@ -42,7 +42,7 @@ const bookmarkButton1 = document.querySelector('[data-js="bookmark-button1"]');
 
 if (bookmarkButton1) {
   bookmarkButton1.addEventListener("click", () => {
-    Box1.classList.toggle("bookmarked");
+    Box1.classList.toggle("qabox--bookmarked");
   });
 }
 
@@ -50,7 +50,7 @@ const bookmarkButton2 = document.querySelector('[data-js="bookmark-button2"]');
 
 if (bookmarkButton2) {
   bookmarkButton2.addEventListener("click", () => {
-    Box2.classList.toggle("bookmarked");
+    Box2.classList.toggle("qabox--bookmarked");
   });
 }
 
