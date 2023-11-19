@@ -2,29 +2,27 @@ console.clear();
 
 //Show/Hide Answercard
 
-const buttonShowAnswer1 = document.querySelector(
-  '[data-js="button-show-answer_1"]'
-);
+function addToggleClassListener(buttonselector, boxselector, clazz) {
+  const button = document.querySelector(buttonselector);
+  const box = document.querySelector(boxselector);
 
-const Box1 = document.querySelector('[data-js="qabox_1"]');
-
-if (buttonShowAnswer1 !== null) {
-  buttonShowAnswer1.addEventListener("click", () => {
-    Box1.classList.toggle("qabox--answer-visible");
-  });
+  if (button !== null) {
+    button.addEventListener("click", () => {
+      box.classList.toggle(clazz);
+    });
+  }
 }
 
-const buttonShowAnswer2 = document.querySelector(
-  '[data-js="button-show-answer_2"]'
+addToggleClassListener(
+  '[data-js="button-show-answer_1"]',
+  '[data-js="qabox_1"]',
+  "qabox--answer-visible"
 );
-
-const Box2 = document.querySelector('[data-js="qabox_2"]');
-
-if (buttonShowAnswer2) {
-  buttonShowAnswer2.addEventListener("click", () => {
-    Box2.classList.toggle("qabox--answer-visible");
-  });
-}
+addToggleClassListener(
+  '[data-js="button-show-answer_2"]',
+  '[data-js="qabox_2"]',
+  "qabox--answer-visible"
+);
 
 //Dark-Mode
 
@@ -36,23 +34,19 @@ if (checkboxDarkMode) {
   });
 }
 
-//Switch bookmarkicon on buttonclick + Anzeige auf Bookmarked-Page
+//Switch bookmarkicon on buttonclick + entsprechende Anzeige auf Bookmarked-Page (fehlt noch)
 
-const bookmarkButton1 = document.querySelector('[data-js="bookmark-button1"]');
+addToggleClassListener(
+  '[data-js="bookmark-button1"]',
+  '[data-js="qabox_1"]',
+  "qabox--bookmarked"
+);
 
-if (bookmarkButton1) {
-  bookmarkButton1.addEventListener("click", () => {
-    Box1.classList.toggle("qabox--bookmarked");
-  });
-}
-
-const bookmarkButton2 = document.querySelector('[data-js="bookmark-button2"]');
-
-if (bookmarkButton2) {
-  bookmarkButton2.addEventListener("click", () => {
-    Box2.classList.toggle("qabox--bookmarked");
-  });
-}
+addToggleClassListener(
+  '[data-js="bookmark-button2"]',
+  '[data-js="qabox_2"]',
+  "qabox--bookmarked"
+);
 
 // const bookmarkButton = document.querySelector('[data-js="bookmark-button"]');
 // console.log(bookmarkButton);
