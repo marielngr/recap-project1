@@ -37,6 +37,11 @@ footer {
   bottom: 0;
   display: flex;
   justify-content: center;
+  text-decoration: none;
+}
+
+.menulist li i {
+  margin-top: 0.5rem;
 }
 
 .menulist li.active {
@@ -50,6 +55,12 @@ footer {
 
 .bookmark {
   width: 40px;
+}
+
+.form {
+  color: black;
+  font-size: 4.25rem;
+  text-decoration: none;
 }
 
 .user {
