@@ -2,10 +2,14 @@ console.clear();
 
 //Show/Hide Answercard
 
-function addToggleClassListener(buttonselector, boxselector, clazz) {
+function addToggleClassListenerBySelectors(buttonselector, boxselector, clazz) {
   const button = document.querySelector(buttonselector);
   const box = document.querySelector(boxselector);
 
+  addToggleClassListenerToElements(button, box, clazz);
+}
+
+function addToggleClassListenerToElements(button, box, clazz) {
   if (button !== null) {
     button.addEventListener("click", () => {
       box.classList.toggle(clazz);
@@ -13,12 +17,12 @@ function addToggleClassListener(buttonselector, boxselector, clazz) {
   }
 }
 
-addToggleClassListener(
+addToggleClassListenerBySelectors(
   '[data-js="button-show-answer_1"]',
   '[data-js="qabox_1"]',
   "qabox--answer-visible"
 );
-addToggleClassListener(
+addToggleClassListenerBySelectors(
   '[data-js="button-show-answer_2"]',
   '[data-js="qabox_2"]',
   "qabox--answer-visible"
@@ -36,13 +40,13 @@ if (checkboxDarkMode) {
 
 //Switch bookmarkicon on buttonclick + entsprechende Anzeige auf Bookmarked-Page (fehlt noch)
 
-addToggleClassListener(
+addToggleClassListenerBySelectors(
   '[data-js="bookmark-button1"]',
   '[data-js="qabox_1"]',
   "qabox--bookmarked"
 );
 
-addToggleClassListener(
+addToggleClassListenerBySelectors(
   '[data-js="bookmark-button2"]',
   '[data-js="qabox_2"]',
   "qabox--bookmarked"
@@ -115,17 +119,16 @@ function createNewCard(question, answer, tag) {
   const buttonShowAnswer = document.createElement("button");
   buttonShowAnswer.classList.add("button-show-answer");
   buttonShowAnswer.setAttribute("data-js", "bookmark-button");
-  buttonShowAnswer.textContent = "Answer";
   section.append(buttonShowAnswer);
 
   const spanShow = document.createElement("span");
   spanShow.classList.add("button-show-answer_show");
-  spanShow.textContent = "Show";
+  spanShow.textContent = "Show Answer";
   buttonShowAnswer.append(spanShow);
 
   const spanHide = document.createElement("span");
-  spanShow.classList.add("button-show-answer_hide");
-  spanShow.textContent = "Hide";
+  spanHide.classList.add("button-show-answer_hide");
+  spanHide.textContent = "Hide Answer";
   buttonShowAnswer.append(spanHide);
 
   const pAnswer = document.createElement("p");
@@ -142,6 +145,18 @@ function createNewCard(question, answer, tag) {
   ul.append(li);
 
   mainElement.append(section);
+
+  addToggleClassListenerToElements(
+    buttonShowAnswer,
+    section,
+    "qabox--answer-visible"
+  );
+
+  addToggleClassListenerToElements(
+    buttonBookmark,
+    section,
+    "qabox--bookmarked"
+  );
 }
 
 //Text field counter

@@ -30,3 +30,8 @@ form textarea {
   margin: 4rem auto 0;
   font-weight: bold;
 }
+
+.remaining-characters {
+  font-size: 0.7rem;
+  font-style: italic;
+}
