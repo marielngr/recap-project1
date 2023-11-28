@@ -1,0 +1,37 @@
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  display: block;
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+form textarea {
+  display: block;
+}
+
+.formular {
+  padding: 2rem;
+  display: flex;
+  display: block;
+  /* justify-content: center; */
+  align-content: space-evenly;
+}
+
+.formular .button-submit {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: block;
+  margin: 4rem auto 0;
+  font-weight: bold;
+}
+
+.remaining-characters {
+  font-size: 0.7rem;
+  font-style: italic;
+}
