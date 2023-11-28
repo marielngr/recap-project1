@@ -24,16 +24,23 @@
     <main>
      <section class="formular">
         <form aria-labelledby="title" data-js="form">
-            <label for="question">Your question:</label>
-            <textarea name="question" id="your-question" required></textarea>
-               
-            <label for="answer">Your answer:</label>
-            <textarea name="answer" id="your-answer" required></textarea>
-            
+            <label for="your-question">Your question:</label>
+            <textarea type="text" name="question" id="your-question" placeholder="Enter your question"  maxlength="150" required></textarea>
+            <p class="remaining-characters" id="remaining-characters">
+            <span data-js="remaining-characters">150</span> characters left</p>   
+
+            <label for="your-answer">Your answer:</label>
+            <textarea name="answer" id="your-answer" placeholder="Enter your answer"  maxlength="150" required></textarea>
+            <p class="remaining-characters" id="remaining-characters">
+              <span data-js="remaining-characters2">150</span> characters left</p>   
+  
             <label for="tag">Tag:</label>
-            <input type="text" name="tag" id="tag" data-js="tag" required/>
-        
-        <button type="submit" class="button-submit" data-js="button-submit">Submit</button>
+            <input type="text" name="tag" id="tag" data-js="tag" placeholder="Enter a tag"  maxlength="150" required/>
+            <p class="remaining-characters" id="remaining-characters">
+              <span data-js="remaining-characters3">150</span> characters left</p>   
+  
+
+        <button type="submit" class="button-submit" data-js="buttonSubmit">Submit</button>
     </form> 
     </section>
     </main>
