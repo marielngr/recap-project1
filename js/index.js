@@ -70,25 +70,29 @@ addToggleClassListener(
 //Form - Submit-button
 
 const formButtonSubmit = document.querySelector('[data-js="button-submit"]');
-console.log(formButtonSubmit);
 const form = document.querySelector('[data-js="form"]');
-console.log(form);
+const yourQuestion = document.querySelector("#your-question");
 
 if (form !== null) {
-  console.log("hallo");
   form.addEventListener("submit", (event) => {
+    //prevent default behavior
     event.preventDefault();
-    console.log(event.target);
 
-    //     const yourQuestion = document.querySelector("#your-question");
-    //
-    //     const formData = new FormData(event.target);
-    //     const data = Object.fromEntries(formData);
-    //     console.log(data);
-    //     event.target.reset();
-    //     event.target.yourQuestion.focus();
+    //read entered data
+    const formData = new FormData(event.target);
+    const data = Object.fromEntries(formData);
+
+    console.log(event.target.elements);
+    console.log(data);
+
+    // Funktionsaufruf für newCard
+
+    //reset all formfields after submit and refocus
+    event.target.reset();
+    event.target.yourQuestion.focus();
   });
 }
+
 //Counter
 
 //Categorien-Keywords?
