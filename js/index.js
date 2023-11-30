@@ -161,35 +161,41 @@ function createNewCard(question, answer, tag) {
 
 //Text field counter
 
-const questionInput = document.querySelector("#your-question");
-const characterDisplay = document.querySelector(
-  '[data-js="remaining-characters"]'
-);
+//Diese Funktion fügt einem Inputelement, das dem gegebenen Selektor entspricht, einen Eventlistener hinzu, der bei jedem Input die verbleibenden Zeichen ausrechnet und in dem Element, das durch den Outputselektor spezifiziert wird, anzeigt.
 
-questionInput.addEventListener("input", (event) => {
-  const currentCharacterCount = event.target.value.length;
-  characterDisplay.textContent = 150 - currentCharacterCount;
-});
+function addTextFieldCounter(inputSelector, outputSelector) {
+  //definiere Constante,  für Selektor eines gegebenen Inputelements
+  const input = document.querySelector(inputSelector);
 
-const answerInput = document.querySelector("#your-answer");
-const characterDisplay2 = document.querySelector(
-  '[data-js="remaining-characters2"]'
-);
+  //definiere Const für Ausgabe
+  const output = document.querySelector(outputSelector);
 
-answerInput.addEventListener("input", (event) => {
-  const currentCharacterCount = event.target.value.length;
-  characterDisplay2.textContent = 150 - currentCharacterCount;
-});
+  if (input) {
+    //füge auf Input Eventlistener hinzu
+    input.addEventListener("input", (event) => {
+      //lokale const für aktuelle Eingabeläge
+      //textContent des Ausgabeelements anpassen
+      const currentCharacterCount = event.target.value.length;
+      output.textContent = 150 - currentCharacterCount;
+    });
+  }
+}
 
-const tagInput = document.querySelector("#tag");
-const characterDisplay3 = document.querySelector(
-  '[data-js="remaining-characters3"]'
-);
+addTextFieldCounter("#your-question", '[data-js="remaining-characters"]');
 
-tagInput.addEventListener("input", (event) => {
-  const currentCharacterCount = event.target.value.length;
-  characterDisplay3.textContent = 150 - currentCharacterCount;
-});
+// const questionInput = document.querySelector("#your-question");
+// const characterDisplay = document.querySelector(
+//   '[data-js="remaining-characters"]'
+// );
+
+// questionInput.addEventListener("input", (event) => {
+//   const currentCharacterCount = event.target.value.length;
+//   characterDisplay.textContent = 150 - currentCharacterCount;
+// });
+
+addTextFieldCounter("#your-answer", '[data-js="remaining-characters2"]');
+
+addTextFieldCounter("#tag", '[data-js="remaining-characters3"]');
 
 //Categorien-Keywords?
 
