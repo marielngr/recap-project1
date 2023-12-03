@@ -66,3 +66,13 @@ footer {
 .user {
   width: 54px;
 }
+
+/* ab hier neue SPA-Navigation*/
+
+.page {
+  display: none;
+}
+
+.page.current {
+  display: block;
+}

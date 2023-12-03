@@ -12,9 +12,9 @@
       rel="stylesheet"
     />
     <link
-    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-    rel="stylesheet"
-  />
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <script src="js/index.js" defer></script>
     <title>Quiz-App</title>
   </head>
@@ -22,61 +22,142 @@
   <body>
     <header><h1>Quiz App</h1></header>
     <main>
-      <section class="qabox" data-js="qabox_1"> 
-        <button class="button-bookmark" data-js="bookmark-button1"></button>
-        <p class="question">What properties flips the axes in flexbox?</p>
-        <button class="button-show-answer" data-js="button-show-answer_1">
-          <span class="button-show-answer_show">Show</span>
-          <span class="button-show-answer_hide">Hide</span> Answer</button>
-        <p class="answer">flex-direction</p>
-        <ul class="categories" aria-label="categories">
-          <li>#html</li>
-          <li>#flexbox</li>
-          <li>#css</li>
-        </ul>
+      <section class="page current" id="home" data-js="page-home">
+        <article class="qabox" data-js="qabox_1">
+          <button class="button-bookmark" data-js="bookmark-button1"></button>
+          <p class="question">What properties flips the axes in flexbox?</p>
+          <button class="button-show-answer" data-js="button-show-answer_1">
+            <span class="button-show-answer_show">Show</span>
+            <span class="button-show-answer_hide">Hide</span> Answer
+          </button>
+          <p class="answer">flex-direction</p>
+          <ul class="categories" aria-label="categories">
+            <li>#html</li>
+            <li>#flexbox</li>
+            <li>#css</li>
+          </ul>
+        </article>
+
+        <article class="qabox" data-js="qabox_2">
+          <button class="button-bookmark" data-js="bookmark-button2"></button>
+          <p class="question">Lorem Impsum dolor sit?</p>
+          <button class="button-show-answer" data-js="button-show-answer_2">
+            <span class="button-show-answer_show">Show</span>
+            <span class="button-show-answer_hide">Hide</span> Answer
+          </button>
+          <p class="answer">Tüdelüdelü</p>
+          <ul class="categories">
+            <li>#html</li>
+            <li>#flexbox</li>
+            <li>#css</li>
+          </ul>
+        </article>
       </section>
 
-      <section class="qabox" data-js="qabox_2">
-        <button class="button-bookmark" data-js="bookmark-button2"></button>
-        <p class="question">Lorem Impsum dolor sit?</p>
-        <button class="button-show-answer" data-js="button-show-answer_2">
-          <span class="button-show-answer_show">Show</span>
-          <span class="button-show-answer_hide">Hide</span> Answer</button>
-        <p class="answer">Tüdelüdelü</p>
-        <ul class="categories">
-          <li>#html</li>
-          <li>#flexbox</li>
-          <li>#css</li>
-        </ul>
+      <section class="page" id="bookmarked" data-js="page-bookmarked">
+        <article class="qabox qabox--bookmarked" data-js="qabox_1">
+          <button class="button-bookmark" data-js="bookmark-button1"></button>
+          <p class="question">What properties flips the axes in flexbox?</p>
+          <button class="button-show-answer" data-js="button-show-answer_1">
+            <span class="button-show-answer_show">Show</span>
+            <span class="button-show-answer_hide">Hide</span> Answer
+          </button>
+          <p class="answer">flex-direction</p>
+          <ul class="categories" aria-label="categories">
+            <li>#html</li>
+            <li>#flexbox</li>
+            <li>#css</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="page" id="form" data-js="page-form">
+        <div class="formular">
+          <form aria-labelledby="title" data-js="form">
+            <label for="your-question">Your question:</label>
+            <textarea
+              type="text"
+              name="question"
+              id="your-question"
+              class="inputfield"
+              placeholder="Enter your question"
+              maxlength="150"
+              required
+            ></textarea>
+            <p class="remaining-characters" id="remaining-characters">
+              <span data-js="remaining-characters">150</span> characters left
+            </p>
+
+            <label for="your-answer">Your answer:</label>
+            <textarea
+              type="text"
+              name="answer"
+              id="your-answer"
+              class="inputfield"
+              placeholder="Enter your answer"
+              maxlength="150"
+              required
+            ></textarea>
+            <p class="remaining-characters" id="remaining-characters">
+              <span data-js="remaining-characters2">150</span> characters left
+            </p>
+
+            <label for="tag">Tag:</label>
+            <input
+              type="text"
+              name="tag"
+              id="tag"
+              data-js="tag"
+              class="inputfield"
+              placeholder="Enter a tag"
+              maxlength="150"
+              required
+            />
+            <p class="remaining-characters" id="remaining-characters">
+              <span data-js="remaining-characters3">150</span> characters left
+            </p>
+
+            <button
+              type="submit"
+              class="button-show-answer"
+              data-js="buttonSubmit"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section class="page" id="profile" data-js="page-profile">
+        <div>Test profile</div>
       </section>
     </main>
     <footer>
-      <nav class="menu">
+      <nav class="menu nav">
         <ul class="menulist">
           <li class="active">
-            <a href="index.html">
-            <img class="home" src="assets/house-solid.svg" alt="Home" />
-          </a>  
-          </li>
-          </li>
-          <li>
-            <a href="bookmarks.html">
-            <img
-              class="bookmark"
-              src="assets/bookmark-solid.svg"
-              alt="Bookmark"
-            />
+            <a data-js="link-home" href="#home">
+              <img class="home" src="assets/house-solid.svg" alt="Home" />
             </a>
           </li>
           <li>
-            <a href="form.html">
-            <i class='bx bxs-message-rounded-add form'></i>
+            <a data-js="link-bookmarked" href="#bookmarked">
+              <img
+                class="bookmark"
+                src="assets/bookmark-solid.svg"
+                alt="Bookmark"
+              />
             </a>
           </li>
           <li>
-            <a href="profile.html">
-            <img class="user" src="assets/circle-user-solid.svg" alt="User" />
-          </a>
+            <a data-js="link-form" href="#form">
+              <i class="bx bxs-message-rounded-add form"></i>
+            </a>
+          </li>
+          <li>
+            <a data-js="link-profile" href="#profile">
+              <img class="user" src="assets/circle-user-solid.svg" alt="User" />
+            </a>
           </li>
         </ul>
       </nav>

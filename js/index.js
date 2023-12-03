@@ -197,6 +197,22 @@ addTextFieldCounter("#your-answer", '[data-js="remaining-characters2"]');
 
 addTextFieldCounter("#tag", '[data-js="remaining-characters3"]');
 
-//Categorien-Keywords?
+// SPA
 
-//Change Userpic/-name?
+const allPages = document.querySelectorAll('[data-js*="page"]');
+const allLinks = document.querySelectorAll('[data-js*="link"]');
+
+allLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    allPages.forEach((page) => {
+      page.classList.remove("current");
+      allLinks.forEach((link) => {
+        link.parentElement.classList.remove("active");
+      });
+    });
+    const hrefAttribute = link.getAttribute("href");
+    const currentPage = document.querySelector(hrefAttribute);
+    currentPage.classList.add("current");
+    link.parentElement.classList.add("active");
+  });
+});
