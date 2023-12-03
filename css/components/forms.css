@@ -19,7 +19,6 @@ form textarea {
   padding: 2rem;
   display: flex;
   display: block;
-  /* justify-content: center; */
   align-content: space-evenly;
 }
 
@@ -33,5 +32,19 @@ form textarea {
 
 .remaining-characters {
   font-size: 0.7rem;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.inputfield {
+  border: 2px solid var(--primary-color);
+  background-color: var(--tertiary-color);
+  padding: 10px;
+  color: var(--quaternary-color);
+}
+
+::placeholder {
+  color: var(--quaternary-color);
+  font-size: smaller;
   font-style: italic;
 }
