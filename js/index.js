@@ -216,3 +216,11 @@ allLinks.forEach((link) => {
     link.parentElement.classList.add("active");
   });
 });
+
+//bookmarked js kaputt, da 2x gleicher name (bookmark-button 1) --> auf Array umstellen und for.each - ggfls querySelektor auf QA-Box
+
+//Inhalt von html weg in js
+
+//css-klasse formular Name fixen
+
+//js modules einführen und js components
