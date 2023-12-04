@@ -129,7 +129,47 @@
       </section>
 
       <section class="page" id="profile" data-js="page-profile">
-        <div>Test profile</div>
+        <section class="profile">
+        <div class="profile-user">
+          <figure class="profile-user_image">
+            <img src="assets/circle-user-solid.svg" alt="Benutzerbild" />
+          </figure>
+          <h2 class="profile-username">Max Doe</h2>
+        </div>
+        <article class="profile-article">
+          <h2>About me</h2>
+          <p>
+            Hallo. Ich bin ein kleiner Blindtext. Und zwar schon so lange ich
+            denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein
+            blinder Text zu sein: Man ergibt keinen Sinn.
+          </p>
+        </article>
+        <section class="counter">
+          <div class="questioncounter">
+            <i class="bx bxs-check-circle"></i>
+            <span>12</span>
+          </div>
+          <div class="bookmarkcounter">
+            <figure class="counter-bookmark_image">
+              <img src="assets/bookmark-solid.svg" alt="Bookmarkicon" />
+            </figure>
+            <div>4</div>
+          </div>
+        </section>
+        <section class="settings">
+          <h2>Settings</h2>
+          <div class="dark-mode-menu">
+            <h3>Dark Mode</h3>
+            <label class="switch">
+              <input
+                type="checkbox"
+                class="hidden-switch"
+                data-js="darkModeToggle"
+              />
+              <div class="toggle"></div>
+            </label>
+          </div>
+        </section>
       </section>
     </main>
     <footer>
@@ -164,3 +204,5 @@
     </footer>
   </body>
 </html>
+
+
