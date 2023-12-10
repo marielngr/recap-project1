@@ -4,9 +4,13 @@ import { cards } from "../../data/data.js";
 export function Card(props) {
   console.log("hallo, hier bin ich in der card");
   console.log(props);
+
   const card = document.createElement("article");
-  card.attributes.add("data-js", "qabox");
+
+  card.setAttribute("data-js", "qabox");
+
   card.classList.add("qabox");
+
   //fix css --> .card
   card.innerHTML = `
             <button class="button-bookmark" data-js="bookmark-button"></button>
@@ -27,7 +31,8 @@ export function Card(props) {
   const bookmarkButtonWrapper = card.querySelector(
     '[data-js="bookmark-button"]'
   );
-
+  console.log(question);
+  return card;
   question.textContent = props.question;
   answer.textContent = props.answer;
 
@@ -38,26 +43,6 @@ export function Card(props) {
     tagElement.textContent = "#" + tag;
     tags.append(tagElement);
   });
-
-  function handleBookmarkButtonClick(event) {
-    console.log("hallo");
-    //     cards.find((card) => card.question === props.question).isBookmarked =
-    //       !props.isBookmarked;
-    //     // To prevent the need to rerender, we can just toggle the class here
-    //     event.currentTarget.classList.toggle("bookmark--active");
-  }
-
-  const bookmarkButton = Bookmark({
-    active: props.isBookmarked,
-    onClick: handleBookmarkButtonClick,
-  });
-  bookmarkButtonWrapper.append(bookmark - button);
-
-  //   function handleAnswerButtonClick() {
-  //     answer.classList.toggle("card__answer--active");
-  //   }
-
-  //   answerButton.addEventListener("click", handleAnswerButtonClick);
 
   return card;
 }

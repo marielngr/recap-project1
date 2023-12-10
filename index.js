@@ -1,4 +1,5 @@
 import { Card } from "./components/Card/Card.js";
+import { cards } from "./data/data.js";
 
 console.clear();
 
@@ -225,7 +226,7 @@ allLinks.forEach((link) => {
   });
 });
 
-createNewCard("Dies ist die Frage", "dies die antwort", "foobar");
+// createNewCard("Dies ist die Frage", "dies die antwort", "foobar");
 
 //bookmarked js kaputt, da 2x gleicher name (bookmark-button 1) --> auf Array umstellen und for.each - ggfls querySelektor auf QA-Box
 
@@ -234,3 +235,10 @@ createNewCard("Dies ist die Frage", "dies die antwort", "foobar");
 //css-klasse formular Name fixen
 
 //js modules einführen und js components
+
+//gehe jede Karte im Array durch und erzeuge dafür eine Komponente, die auf der Homeseite angezeigt wird
+
+cards.forEach((card) => {
+  const bla = Card(card);
+  mainElement.append(bla);
+});
