@@ -31,13 +31,12 @@ export function Card(props) {
   const bookmarkButtonWrapper = card.querySelector(
     '[data-js="bookmark-button"]'
   );
-  console.log(question);
-  return card;
+
   question.textContent = props.question;
   answer.textContent = props.answer;
 
   props.tags.forEach((tag) => {
-    const tagElement = document.ceateElement("li");
+    const tagElement = document.createElement("li");
     tagElement.classList.add("card__tag");
     //css anpassen
     tagElement.textContent = "#" + tag;
@@ -46,3 +45,4 @@ export function Card(props) {
 
   return card;
 }
+// als nächstes Import toggleElement von utils (erst in utils verschieben)

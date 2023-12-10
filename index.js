@@ -105,13 +105,15 @@ if (form !== null) {
 
 const mainElement = document.querySelector("body > main");
 
-function createNewCard(question, answer, tag) {
+function createNewCard(question, answer, tags) {
   const neueCard = Card({
-    question,
-    answer,
-    tag,
+    question: question,
+    answer: answer,
+    tags: [tag],
   });
+
   return;
+  // bzw zum schluss neu rendern und ins Array pushen
   const section = document.createElement("section");
   section.classList.add("qabox");
 
