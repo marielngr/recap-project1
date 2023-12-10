@@ -228,19 +228,20 @@ allLinks.forEach((link) => {
   });
 });
 
-// createNewCard("Dies ist die Frage", "dies die antwort", "foobar");
-
 //bookmarked js kaputt, da 2x gleicher name (bookmark-button 1) --> auf Array umstellen und for.each - ggfls querySelektor auf QA-Box
-
-//Inhalt von html weg in js
 
 //css-klasse formular Name fixen
 
-//js modules einführen und js components
+//js components erstellen
 
 //gehe jede Karte im Array durch und erzeuge dafür eine Komponente, die auf der Homeseite angezeigt wird
 
+const homeSection = document.querySelector('[data-js="page-home"]');
+
 cards.forEach((card) => {
   const bla = Card(card);
-  mainElement.append(bla);
+  homeSection.append(bla);
 });
+
+//als letztes filter für bookmarkseite und formular neue Karten ins Array
+//ggfls navigation auch als componenten
