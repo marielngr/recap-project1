@@ -1,3 +1,5 @@
+import { Card } from "./components/Card/Card.js";
+
 console.clear();
 
 //Show/Hide Answercard
@@ -103,6 +105,12 @@ if (form !== null) {
 const mainElement = document.querySelector("body > main");
 
 function createNewCard(question, answer, tag) {
+  const neueCard = Card({
+    question,
+    answer,
+    tag,
+  });
+  return;
   const section = document.createElement("section");
   section.classList.add("qabox");
 
@@ -216,6 +224,8 @@ allLinks.forEach((link) => {
     link.parentElement.classList.add("active");
   });
 });
+
+createNewCard("Dies ist die Frage", "dies die antwort", "foobar");
 
 //bookmarked js kaputt, da 2x gleicher name (bookmark-button 1) --> auf Array umstellen und for.each - ggfls querySelektor auf QA-Box
 
